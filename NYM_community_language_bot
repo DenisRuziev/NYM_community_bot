@@ -1,4 +1,4 @@
-# Import necessary libraries
+# Import libraries
 import discord
 from discord_slash import SlashCommand, SlashContext
 
@@ -36,7 +36,7 @@ outputs = {
     }
 }
 
-# Create a Slash command /project_description
+# Create a command /project_description
 @slash.slash(name="project_description", description="Show NYM project description")
 # Create a function to handle this command
 async def project_description(ctx: SlashContext):
@@ -52,7 +52,7 @@ async def project_description(ctx: SlashContext):
     # Send the output to the channel
     await ctx.send(output)
 
-# Create a Slash command /documentation
+# Create a command /documentation
 @slash.slash(name="documentation", description="Show documentation for the bot")
 # Create a function to handle this command
 async def documentation(ctx: SlashContext):
@@ -68,7 +68,7 @@ async def documentation(ctx: SlashContext):
     # Send the output to the channel
     await ctx.send(output)
 
-# Create a Slash command /installation_script
+# Create a command /installation_script
 @slash.slash(name="installation_script", description="Show installation script for NYM")
 # Create a function to handle this command
 async def installation_script(ctx: SlashContext):
@@ -84,7 +84,7 @@ async def installation_script(ctx: SlashContext):
     # Send the output to the channel
     await ctx.send(output)
 
-# Create a Slash command /community_twitter
+# Create a command /community_twitter
 @slash.slash(name="community_twitter", description="Show NYM community Twitter")
 # Create a function to handle this command
 async def community_twitter(ctx: SlashContext):
